@@ -403,7 +403,18 @@ export default class Configurator {
       };
     }
 
-    config.allowedContent = true;
+    // config.allowedContent = true;
+    config.htmlSupport = {
+      allow: [
+        {
+          name: /.*/,
+          attributes: true,
+          classes: true,
+          styles: true
+        }
+      ]
+    };
+    config.removePlugins = ['RestrictedEditingMode', 'GeneralHtmlSupport'];
 
     return config;
   }
