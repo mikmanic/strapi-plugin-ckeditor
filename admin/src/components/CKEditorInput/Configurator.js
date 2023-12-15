@@ -25,7 +25,7 @@ import ckeditor5TableDll from "@ckeditor/ckeditor5-table/build/table.js";
 import ckeditor5WordCountDll from "@ckeditor/ckeditor5-word-count/build/word-count.js";
 import ckeditor5MaximumLengthDll from "@reinmar/ckeditor5-maximum-length/build/maximum-length.js";
 import ckeditor5sourceEditingDll from '@ckeditor/ckeditor5-source-editing/build/source-editing.js';
-import ckeditor5htmlSupportDll from '@ckeditor/ckeditor5-html-supprt/build/html-support.js'
+import ckeditor5htmlSupportDll from '@ckeditor/ckeditor5-html-support/build/html-support.js'
 import { StrapiMediaLib } from "./plugins/StrapiMediaLib";
 
 const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
