@@ -1,17 +1,21 @@
 import { css } from "styled-components";
 
 export const style = css`
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
   .ck.ck-editor__main > .ck-editor__editable {
     background: #111725 !important;
-    color: #fff;
+    color: #F3F7FF;
   }
 
-  .ck-content {
-    --fh-text-padding: #F3F7FF;
+  :root {
+    --fh-text-color: #F3F7FF;
     --fh-body-font: 'Source Serif Pro', serif;
     --fh-heading-font: 'Open Sans', sans-serif;
     --fh-border-radius: 10px;
+  }
 
+  .ck-content {
     font-family: var(--fh-body-font);
     font-weight: normal;
     font-style: normal;
