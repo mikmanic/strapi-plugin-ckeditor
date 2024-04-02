@@ -8,6 +8,7 @@ export const style = css`
     color: #F3F7FF;
   }
 
+  /* Copy from school.css */
   :root {
     --fh-text-color: #F3F7FF;
     --fh-body-font: 'Source Serif Pro', serif;
@@ -124,9 +125,9 @@ export const style = css`
     width: 6px;
   }
   .ck-content .yellow_highlight {
-    background-color: #FEFB0E;
+    background-color: #605AA5;
     padding: 16px;
-    color: #111725;
+    color: #FFFFFF;
     border-radius: var(--fh-border-radius);
   }
   .ck-content .gray_block_with_star {
