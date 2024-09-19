@@ -145,4 +145,9 @@ export const style = css`
     margin-bottom: 24px;
     align-self: center;
   }
+  .ck-content .note {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #7C89A9;
+  }
 `;
