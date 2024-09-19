@@ -27,6 +27,7 @@ import ckeditor5MaximumLengthDll from "@reinmar/ckeditor5-maximum-length/build/m
 import ckeditor5sourceEditingDll from '@ckeditor/ckeditor5-source-editing/build/source-editing.js';
 import ckeditor5htmlSupportDll from '@ckeditor/ckeditor5-html-support/build/html-support.js'
 import { StrapiMediaLib } from "./plugins/StrapiMediaLib";
+import HighlightWrapper from './plugins/HighlightWrapper/HighlightWrapper';
 
 const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
   light: {
@@ -52,12 +53,13 @@ const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
       window.CKEditor5.table.TableCaption,
       window.CKEditor5.wordCount.WordCount,
       window.CKEditor5.htmlSupport.GeneralHtmlSupport,
-      StrapiMediaLib
+      StrapiMediaLib,
+      HighlightWrapper
     ],
     toolbar: [
       'undo', 'redo',
       '|',
-      'heading',
+      'heading', 'highlightWrapper',
       '|',
       'bold', 'italic',
       '|',
@@ -136,12 +138,13 @@ const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
       window.CKEditor5.wordCount.WordCount,
       window.CKEditor5.sourceEditing.SourceEditing,
       window.CKEditor5.htmlSupport.GeneralHtmlSupport,
-      StrapiMediaLib
+      StrapiMediaLib,
+      HighlightWrapper
     ],
     toolbar: [
         'undo', 'redo',
         '|',
-        'heading',
+        'heading', 'highlightWrapper',
         '|',
         'bold', 'italic',
         '|',
@@ -247,7 +250,8 @@ const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
       window.CKEditor5.highlight.Highlight,
       window.CKEditor5.sourceEditing.SourceEditing,
       window.CKEditor5.htmlSupport.GeneralHtmlSupport,
-      StrapiMediaLib
+      StrapiMediaLib,
+      HighlightWrapper
     ],
     toolbar: {
       items: [
@@ -255,7 +259,7 @@ const CKEDITOR_BASE_CONFIG_FOR_PRESETS = {
         '|',
         'findAndReplace', 'selectAll',
         '|',
-        'heading',
+        'heading', 'highlightWrapper', 'highlightStarsWrapper',
         '|',
         'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor',
         '|',

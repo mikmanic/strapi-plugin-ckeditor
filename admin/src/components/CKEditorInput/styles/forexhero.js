@@ -124,20 +124,23 @@ export const style = css`
     margin-top: 11px;
     width: 6px;
   }
-  .ck-content .yellow_highlight {
+  .ck-content .yellow_highlight,
+  .ck-content .highlight {
     background-color: #605AA5;
     padding: 16px;
     color: #FFFFFF;
     border-radius: var(--fh-border-radius);
   }
-  .ck-content .gray_block_with_star {
+  .ck-content .gray_block_with_star,
+  .ck-content .highlight-stars {
     background-color: #605AA5;
     padding: 16px 16px 24px 16px;
     border-radius: var(--fh-border-radius);
     display: flex;
     flex-direction: column;
   }
-  .ck-content .gray_block_with_star:before {
+  .ck-content .gray_block_with_star:before,
+  .ck-content .highlight-stars:before {
     content: url("/assets/stars.svg");
     margin-bottom: 24px;
     align-self: center;
