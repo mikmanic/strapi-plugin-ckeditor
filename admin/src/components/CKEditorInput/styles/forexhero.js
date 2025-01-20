@@ -16,15 +16,16 @@ export const style = css`
     --fh-border-radius: 10px;
   }
   .ck-content {
-    background: #111725 !important;
-    color: #F3F7FF;
+    background: #384157 !important;
+    color: #FFFFFF;
     font-family: var(--fh-body-font);
     font-weight: normal;
     font-style: normal;
-    font-size: 18px;
+    font-size: 16px;
   }
   .ck-content img {
     border-radius: var(--fh-border-radius);
+    border: 1px solid #1C2232;
     width: 100%;
   }
   .ck-content .image, .ck-content .image-inline {
@@ -37,29 +38,31 @@ export const style = css`
   .ck-content h1, .ck-content h2, .ck-content h3, .ck-content h4, .ck-content h5, .ck-content h6 {
     font-family: var(--fh-heading-font);
     font-weight: 700;
-    text-align: left;
+    line-height: normal;
+    /*text-align: left; doesn't work for rtl */
     margin: 1.5em 0 1em 0;
   }
   .ck-content h1 {
-    font-size: 26px;
+    font-size: 24px;
   }
   .ck-content h2 {
-    font-size: 22px;
+    font-size: 18px;
   }
   .ck-content h3 {
-    font-size: 26px;
+    font-size: 18px;
   }
   .ck-content h4 {
-    font-size: 20px;
+    margin: 1em 0 0.5em 0;
+    font-size: 16px;
   }
   .ck-content h5 {
-    font-size: 18px;
+    font-size: 16px;
   }
   .ck-content h6 {
-    font-size: 18px;
+    font-size: 16px;
   }
   .ck-content p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
     margin: 0;
   }
@@ -93,20 +96,20 @@ export const style = css`
   .ck-content ol li::before {
     content: counter(list-counter) ".";
     font-weight: 900;
-    color: #00D8AD;
+    /*color: #968BFC;*/
     position: absolute;
     left: -1.5rem;
   }
   .ck-content ul {
     margin: 0 0 1rem 2rem;
-    list-style: none;
+    /*list-style: none;*/
   }
   .ck-content ul li {
-    list-style: none;
-    margin-bottom: 1rem;
-    position: relative;
+    /*list-style: none;*/
+    margin-bottom: 0.5rem;
+    /*position: relative;*/
   }
-  .ck-content ul li::before {
+  /*.ck-content ul li::before {
     content: '';
     display: inline-block;
     width: 0.5em;
@@ -116,7 +119,7 @@ export const style = css`
     margin-top: 0.4em;
     position: absolute;
     left: -1.25rem;
-  }
+  }*/
   .ck-content ul li img, .ck-content ol li img {
     float: left;
     height: auto;
@@ -124,27 +127,35 @@ export const style = css`
     margin-top: 11px;
     width: 6px;
   }
-  .ck-content .yellow_highlight,
+
   .ck-content .highlight {
-    background-color: #605AA5;
+    background-color: #455270;
     padding: 16px;
-    color: #FFFFFF;
+    color: #F3F7FF;
     border-radius: var(--fh-border-radius);
   }
-  .ck-content .gray_block_with_star,
+
+  .ck-content .highlight-alt {
+    background-color: #455270;
+    padding: 16px;
+    color: #F3F7FF;
+    border-left: 2px solid #7E89A8;
+  }
+
   .ck-content .highlight-stars {
-    background-color: #605AA5;
+    background-color: #455270;
     padding: 16px 16px 24px 16px;
     border-radius: var(--fh-border-radius);
     display: flex;
     flex-direction: column;
   }
-  .ck-content .gray_block_with_star:before,
+
   .ck-content .highlight-stars:before {
     content: url("/assets/stars.svg");
     margin-bottom: 24px;
     align-self: center;
   }
+
   .ck-content .note {
     font-size: 14px;
     line-height: 1.2;
